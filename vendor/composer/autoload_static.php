@@ -7,6 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit6c2339e77252249df2f6931f19248d16
 {
     public static $files = array (
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '34901568a1e26d13dd475cb2c85e0284' => __DIR__ . '/..' . '/zendframework/zend-form/autoload/formElementManagerPolyfill.php',
         'dc55c110342095dce21b6357af7bc409' => __DIR__ . '/..' . '/zendframework/zend-test/autoload/phpunit-class-aliases.php',
@@ -22,13 +23,17 @@ class ComposerStaticInit6c2339e77252249df2f6931f19248d16
             'Zend\\View\\' => 10,
             'Zend\\Validator\\' => 15,
             'Zend\\Uri\\' => 9,
+            'Zend\\Text\\' => 10,
             'Zend\\Test\\' => 10,
             'Zend\\Stdlib\\' => 12,
+            'Zend\\Session\\' => 13,
             'Zend\\ServiceManager\\' => 20,
             'Zend\\Router\\' => 12,
             'Zend\\Mvc\\' => 9,
             'Zend\\ModuleManager\\' => 19,
+            'Zend\\Math\\' => 10,
             'Zend\\Loader\\' => 12,
+            'Zend\\Json\\' => 10,
             'Zend\\InputFilter\\' => 17,
             'Zend\\I18n\\' => 10,
             'Zend\\Hydrator\\' => 14,
@@ -44,6 +49,8 @@ class ComposerStaticInit6c2339e77252249df2f6931f19248d16
             'Zend\\Config\\' => 12,
             'Zend\\ComponentInstaller\\' => 24,
             'Zend\\Code\\' => 10,
+            'Zend\\Captcha\\' => 13,
+            'ZendService\\ReCaptcha\\' => 22,
             'ZendDeveloperTools\\' => 19,
             'ZF\\DevelopmentMode\\' => 19,
         ),
@@ -69,6 +76,7 @@ class ComposerStaticInit6c2339e77252249df2f6931f19248d16
             'Application\\' => 12,
             'ApplicationTest\\' => 16,
             'Album\\' => 6,
+            'AlbumTest\\' => 10,
         ),
     );
 
@@ -91,6 +99,10 @@ class ComposerStaticInit6c2339e77252249df2f6931f19248d16
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-uri/src',
         ),
+        'Zend\\Text\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-text/src',
+        ),
         'Zend\\Test\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-test/src',
@@ -98,6 +110,10 @@ class ComposerStaticInit6c2339e77252249df2f6931f19248d16
         'Zend\\Stdlib\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-stdlib/src',
+        ),
+        'Zend\\Session\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-session/src',
         ),
         'Zend\\ServiceManager\\' => 
         array (
@@ -115,9 +131,17 @@ class ComposerStaticInit6c2339e77252249df2f6931f19248d16
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-modulemanager/src',
         ),
+        'Zend\\Math\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-math/src',
+        ),
         'Zend\\Loader\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-loader/src',
+        ),
+        'Zend\\Json\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-json/src',
         ),
         'Zend\\InputFilter\\' => 
         array (
@@ -179,6 +203,14 @@ class ComposerStaticInit6c2339e77252249df2f6931f19248d16
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-code/src',
         ),
+        'Zend\\Captcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zend-captcha/src',
+        ),
+        'ZendService\\ReCaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zendframework/zendservice-recaptcha/src',
+        ),
         'ZendDeveloperTools\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-developer-tools/src',
@@ -218,6 +250,10 @@ class ComposerStaticInit6c2339e77252249df2f6931f19248d16
         'Album\\' => 
         array (
             0 => __DIR__ . '/../..' . '/module/Album/src',
+        ),
+        'AlbumTest\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/module/Album/test',
         ),
     );
 

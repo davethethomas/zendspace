@@ -12,6 +12,7 @@
  */
 
 return [
+    'Zend\Session',
     'Zend\Form',
     'Zend\Db',
     'Zend\Router',

@@ -100,8 +100,7 @@ class AlbumController extends AbstractActionController
         ];
     }
 
-    ///
-    ///
+
     public function addAction()
     {
         $form = new AlbumForm();
@@ -112,17 +111,28 @@ class AlbumController extends AbstractActionController
         if (! $request->isPost()) {
             return ['form' => $form];
         }
-
+        $recap= null;
         $album = new Album();
         $form->setInputFilter($album->getInputFilter());
         $form->setData($request->getPost());
 
+
+
         if (! $form->isValid()) {
+
             return ['form' => $form];
         }
 
+
         $album->exchangeArray($form->getData());
+
+
+
+
+
         $this->table->saveAlbum($album);
+
+
         return $this->redirect()->toRoute('album');
     }
 

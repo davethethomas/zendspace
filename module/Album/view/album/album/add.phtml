@@ -14,9 +14,19 @@ $artist = $form->get('artist');
 $artist->setAttribute('class', 'form-control');
 $artist->setAttribute('placeholder', 'Artist');
 
+$captcha = $form->get('captcha');
+//$captcha->setAttribute('class', 'form-control');
+//$artist->setAttribute('placeholder', 'c');
+
+
 // This provides CSS classes for the submit button:
 $submit = $form->get('submit');
 $submit->setAttribute('class', 'btn btn-primary');
+
+
+
+
+
 
 $form->setAttribute('action', $this->url('album', ['action' => 'add']));
 $form->prepare();
@@ -35,6 +45,12 @@ echo $this->form()->openTag($form);
         <?= $this->formLabel($artist) ?>
         <?= $this->formElement($artist) ?>
         <?= $this->formElementErrors()->render($artist, ['class' => 'help-block']) ?>
+    </div>
+
+    <div class="form-group">
+        <?= $this->formLabel($captcha) ?>
+        <?= $this->formElement($captcha) ?>
+        <?= $this->formElementErrors()->render($captcha, ['class' => 'help-block']) ?>
     </div>
 
 <?php
